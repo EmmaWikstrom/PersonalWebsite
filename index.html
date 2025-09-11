@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emma Malm Wikström</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +16,8 @@
     <main>
         <section id="about-me">
             <h2>About me</h2>
-            <p>Hi! I’m Emma, a Frontend Developer student at Hyper Island in Stockholm. With a background in UX and
+            <p class="about-me">Hi! I’m Emma, a Frontend Developer student at Hyper Island in Stockholm. With a
+                background in UX and
                 customer experience, I’m now focusing on building my technical skills and learning to create engaging,
                 accessible, user-friendly web solutions.
                 <br><br>
@@ -27,20 +29,20 @@
         <section id="interests">
             <h2>Learning, Creating, Living</h2>
             <ul>
-                <li>
+                <li class="tech">
                     <h3>Tech Journey</h3>
                     <p>My background in UX and CX research taught me how to understand people and their needs.
                         Now I’m building on that knowledge by learning code, so I can create the solutions
                         I once only sketched out.</p>
                 </li>
-                <li>
+                <li class="knitting">
                     <h3>Knitting & Creativity</h3>
                     <p>I love knitting and experimenting with patterns, and I’m part of several social knitting
                         communities. I enjoy exploring different forms of crafting, and I find a playful curiosity every
                         time I sit down to <lang="sv">"pyssla".</lang>
                     </p>
                 </li>
-                <li>
+                <li class="everyday">
                     <h3>Everyday Life </h3>
                     <p>I live next to the forest and enjoy spending time outdoors—walking our dog, running on the
                         trails,
@@ -50,11 +52,13 @@
                 </li>
             </ul>
         </section>
-        <section id="contact">
+        <section class="contact">
             <h2>Contact & Links</h2>
-            <a>Send me an email</a> <br>
-            <a>Linkedin</a> <br>
-            <a>Github</a> <br>
+            <div class="contact-links">
+            <a class="button">Email</a> 
+            <a class="button">Linkedin</a> 
+            <a class="button">Github</a> 
+            </div>
         </section>
 
     </main>
