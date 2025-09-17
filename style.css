@@ -94,21 +94,40 @@ body {
   padding: 0;
 }
 
-h2 {
-  padding-top: 1.5em;
-  color: #3A2C1A;
-}
-
-p {
-  color: #3A2C1A;
-}
-
 header {
   text-align: center;
   padding: 3em 4em;
   color: #f9f0e3;
   background-color: #726D36;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
 
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+p,
+li,
+a,
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  padding-top: 1.5em;
+  color: #3A2C1A;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+
+p {
+  color: #3A2C1A;
+  font-size: 1.25em;
 }
 
 header p {
@@ -118,7 +137,6 @@ header p {
 
 main {
   max-width: 67em;
-  /* TODO Fix width later*/
   margin: 0 auto;
   padding: 0 1.5em 1.5em 1.5em;
 }
@@ -137,7 +155,7 @@ main {
   margin: 0 1.5em 0 0;
 }
 
-/* responsivity */
+/* responsivity about me*/
 @media screen and (width <=38em) {
   .about-me {
     flex-direction: column;
@@ -156,7 +174,7 @@ ul {
   padding-left: 0;
 }
 
-/* responsivity */
+/* responsivity interests */
 @media screen and (width <=50em) {
   ul {
     grid-template-columns: 1fr;
@@ -177,13 +195,6 @@ h3 {
   margin: -0.5em 0;
 }
 
-/* if you want to use background images instead of img elements
-.knitting {
-  /* background-image: url(IMG/IMG_knitting.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
 .img {
   border-radius: 1em 1em;
   margin: 1.5em 0 0 0;
@@ -198,6 +209,8 @@ h3 {
 
 .button {
   text-align: center;
+  text-decoration: none;
+  color: #272012;
   background-color: #f9f0e3;
   transition: 200ms all ease-out;
   display: inline-block;
@@ -211,12 +224,17 @@ h3 {
   color: #f9f0e3;
 }
 
+a:visited {
+  color: #272012;
+  text-decoration: none;
+}
+
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 4em 4em;
-  margin: 0.5em 0 0 0;
+  margin: 1.5em 0 0 0;
   color: #f9f0e3;
   background-color: #726D36;
 }
